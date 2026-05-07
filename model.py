@@ -15,7 +15,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Initialize a Random Forest Classifier model
 # This is an ensemble learning method that builds multiple decision trees
-clf = RandomForestClassifier()
+clf = RandomForestClassifier(n_estimators=150)
 
 # Train the model using the training data
 # The model learns to predict the iris species based on the flower measurements
